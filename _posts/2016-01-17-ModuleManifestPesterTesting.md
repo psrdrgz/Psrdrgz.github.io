@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updated: Pester Testing Your Module Manifest
+title: Updated - Pester Testing Your Module Manifest
 ---
 When you create a new public function for your PowerShell module do you sometimes forget to add it to the module manifest like I do? If so, read on!
 
