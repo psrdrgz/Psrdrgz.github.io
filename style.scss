@@ -18,21 +18,21 @@ html {
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  background: $darkGray;
+  font: 14px/1.4 $helvetica;
+  color: $white;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1024px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $white;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +61,10 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+}
+
+h6 {
+  font-size: 12px;
 }
 
 p {
@@ -117,16 +120,16 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $white;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: $white;
   background: $lightGray;
 }
 ::selection {
-  color: $black;
+  color: $white;
   background: $lightGray;
 }
 
@@ -192,7 +195,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -202,7 +205,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $white;
   font-size: 16px;
 
   @include mobile {
@@ -225,7 +228,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -243,7 +246,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $darkGray;
 }
 
 .posts > .post:last-child {
@@ -254,9 +257,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $darkGray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $white;
     font-size: 22px;
     font-style: italic;
   }
@@ -273,9 +276,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  background-color: $darkGray;
 }
 
 footer {
