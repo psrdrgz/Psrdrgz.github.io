@@ -6,6 +6,8 @@ title: Pester Testing Your Module Manifest
 + 
 + ```powershell
 + (get-command Import-PowerShellDataFile).ScriptBlock
+```
+
 ****
 When you create a new public function for your PowerShell module do you sometimes forget to add it to the module manifest like I do? If so, read on!
 
