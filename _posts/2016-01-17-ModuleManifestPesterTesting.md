@@ -1,7 +1,12 @@
 ---
 layout: post
-title: Updated - Pester Testing Your Module Manifest
+title: Pester Testing Your Module Manifest
 ---
+**Update:** Looks like there is a new Import-PowerShellDataFile function available in PSv5 RTM. The function uses the AST similarly to what's shown below. If you want to take a look, feel free to check it out as follows:
++ 
++ ```powershell
++ (get-command Import-PowerShellDataFile).ScriptBlock
+****
 When you create a new public function for your PowerShell module do you sometimes forget to add it to the module manifest like I do? If so, read on!
 
 I can't tell you how many times I've created a fancy new function to add to my custom PowerShell module only to find out later that I can't use it because I didn't update the FunctionsToExport key of my module's manifest. Now I'm sure some of you are thinking, "Why not just use a wildcard and export all functions in the module?" Well in my case I'd prefer not to for two reasons:
