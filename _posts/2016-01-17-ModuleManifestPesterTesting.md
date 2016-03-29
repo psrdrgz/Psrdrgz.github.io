@@ -3,9 +3,9 @@ layout: post
 title: Pester Testing Your Module Manifest
 ---
 **Update:** Looks like there is a new Import-PowerShellDataFile function available in PSv5 RTM. The function uses the AST similarly to what's shown below. If you want to take a look, feel free to check it out as follows:
-+ 
-+ ```powershell
-+ (get-command Import-PowerShellDataFile).ScriptBlock
+
+```powershell
+(get-command Import-PowerShellDataFile).ScriptBlock
 ```
 
 ****
