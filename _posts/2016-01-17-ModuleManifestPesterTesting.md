@@ -29,7 +29,7 @@ Describe "ARTools Module Manifest" {
     It "FunctionsToExport key contains all public functions." {
         $ManifestAST = [System.Management.Automation.Language.Parser]::ParseFile("$PSScriptRoot\ARTools.psd1",[ref]$null,[ref]$null)
 
-        $ManifestHashTable = $ManifestAST.FindAll({$args[0] -is [System.Management.Automation.Language.HashtableAst]}, $true).SafeGetValue()
+        $ManifestHashTable = $ManifestAST.Find({$args[0] -is [System.Management.Automation.Language.HashtableAst]}, $true).SafeGetValue()
 
         $FunctionsToExport = $ManifestHashTable.FunctionsToExport
 
